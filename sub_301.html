@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>STRiDA 정품등록</title>
+
+    <!--CSS -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/strida_common.css">
+    <!--해당 서브페이지 스타일 적용-->
+    <link rel="stylesheet" href="css/sub_301.css">
+
+    <!--Web Font-->
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+    <!--Favicon-->
+        <link rel="apple-touch-icon-precomposed" href="img/main_img/strida_favicon.png">
+        <link rel="shortcut icon" href="img/main_img/strida_favicon.png">
+
+</head>
+
+<body>
+    <!--header-->
+    <? include "header.html" ?>
+    <!--//header-->
+
+    <div id="serial_wrap" class="center">
+        <div id="text">
+            <h2>
+                STRiDA 정품등록
+            </h2>
+            <p>
+                시리얼 번호 입력 하기
+            </p>
+        </div>
+        <form action="#">
+            <input type="text" id="serialnumber" maxlength="10" placeholder="10자리 시리얼 번호를 입력하세요" pattern="[가-힣]{3-7}">
+            <input type="image" src="img/sub_3/sub_301_img/Sub_301_01.png" formaction="#" formmethod="post" alt="확인">
+        </form>
+    </div>
+    <!-- //serial_wrap -->
+
+    <div id="serial_photo" class="center">
+        <div id="left_photo">
+            <img src="img/sub_3/sub_301_img/Sub_301_02.png" alt="스트라이다 시리얼 번호 위치">
+        </div>
+        <div id="right_photo">
+            <img src="img/sub_3/sub_301_img/Sub_301_03.png" alt="스트라이다 시리얼 번호 상세사진">
+            <p>
+                EX) M15F000562
+            </p>
+            <p>
+                뒷바퀴 프레임 아랫면에 있는 알파벳+2자리숫자+알파벳+6자리숫자로 구성
+            </p>
+        </div>
+    </div>
+    <!-- //serial_photo -->
+
+    <div id="serial_icon_wrap" class="center">
+        <h2>
+            STRiDA 정품등록 혜택
+        </h2>
+        <div id="serial_icon">
+            <div id="icon1_wrap">
+                <div id="icon1">
+                    <img src="img/sub_3/sub_301_img/Sub_301_4.png" alt="정품임을 확인합니다.">
+                </div>
+                <h4>
+                    정품임을 확인합니다
+                </h4>
+                <p>
+                    고객님의 안전을 가품에 맡기지 마세요.
+                </p>
+            </div>
+            <div id="icon2_wrap">
+                <div id="icon2">
+                    <img src="img/sub_3/sub_301_img/Sub_301_5.png" alt="A/S 및 워런티  서비스 제공.">
+                </div>
+                <h4>
+                    A/S 및 워런티 서비스 제공
+                </h4>
+                <p>
+                    전국에 있는 가맹 대리점에서 서비스(유상 및 무상) 이용이 가능합니다.
+                </p>
+            </div>
+            <div id="icon3_wrap">
+                <div id="icon3">
+                    <img src="img/sub_3/sub_301_img/Sub_301_6.png" alt="도난 및 분실 방지.">
+                </div>
+                <h4>
+                    도난 및 분실 방지
+                </h4>
+                <p>
+                    분실시 분실 시리얼 번호로 등록할 수 있습니다.
+                </p>
+            </div>
+            <div id="icon4_wrap">
+                <div id="icon4">
+                    <img src="img/sub_3/sub_301_img/Sub_301_7.png" alt="각종 이벤트 및 혜택 제공.">
+                </div>
+                <h4>
+                    각종 이벤트 및 혜택 제공
+                </h4>
+                <p>
+                    행사 및 이벤트 등의 참여 자격이 주어집니다.
+                </p>
+            </div>
+        </div>
+    </div>
+    <!-- //serial_icon -->
+
+    <!-- footer -->
+    <? include "footer.html" ?>
+    <!-- //footer -->
+
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/strida_common.js"></script>
+
+</body>
+
+</html>

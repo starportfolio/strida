@@ -1,0 +1,364 @@
+@charset"utf-8";
+
+/*slide*/
+#product_top_wrap ul {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.swiper-container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#slide_wrap {
+    position: relative;
+    width: 100%;
+}
+
+#slide_wrap .sl_first {
+    position: relative;
+    z-index: 1;
+}
+
+#slide_wrap .sl_hiden {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 0;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    /* Center slide text vertically */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    width: 46%;
+    max-width: 770px;
+    height: auto;
+}
+
+.swiper-slide .slide_text {
+    width: 46%;
+    height: auto;
+    font-size: 15px;
+    line-height: 2.0em;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    background: url(../img/main_img/slidebanner_btn.png) 0 0 no-repeat;
+    height: 50px;
+    width: 30px;
+    opacity: 0.6;
+}
+
+.swiper-button-prev {
+    left: 0;
+    top: calc(50% - 25px);
+}
+
+.swiper-button-next {
+    right: 0;
+    top: calc(50% - 25px);
+}
+
+.swiper-button-next:hover,
+.swiper-button-prev:hover {
+    opacity: 1;
+}
+
+.swiper-button-next {
+    background-position: -50px 0;
+}
+
+#product_top_wrap ul li a {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#product_top_wrap ul li:hover a {
+    color: #e9881d;
+}
+
+#product_top_wrap ul li.sl_selected a {
+    color: #e9881d;
+}
+
+.swiper-pagination-bullet {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    border-radius: 100%;
+    background: #afafaf;
+    opacity: .5;
+}
+
+.swiper-pagination-bullet-active {
+    opacity: 1;
+    background: #000;
+}
+
+/*tab_menu*/
+#product_bottom_wrap h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+#product_tab ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+#product_tab ul li {
+    width: 25%;
+    position: relative;
+    text-align: center;
+}
+
+#product_tab ul li::after {
+    border-right: 2px solid #ddd;
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 5%;
+    height: 60%;
+}
+
+#product_tab ul li:last-child::after {
+    border-right: none;
+}
+
+#product_tab ul li img {
+    width: 100%;
+    max-width: 231px;
+}
+
+#product_tab ul li a .product_photo {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    text-align: center;
+}
+
+#product_tab ul li p {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 40px 0
+}
+
+/*product detail*/
+#detail_photo_wrap > ul {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+#detail_photo_wrap ul .detail_photo {
+    box-sizing: border-box;
+    width: 50%;
+    text-align: center;
+}
+
+#detail_photo_wrap ul .detail_photo img {
+    width: 100%;
+    max-width: 541px;
+}
+
+#detail_photo_wrap ul .detail_text {
+    width: 50%;
+}
+
+.detail_text table {
+    padding: 5%;
+    font-size: 15px;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.detail_text table tr {
+    height: 10%;
+}
+
+.detail_text table th {
+    text-align: right;
+    width: 20%;
+}
+
+.detail_text table td {
+    padding-left: 1%;
+    width: 79%;
+}
+
+#detail_photo_wrap {
+    position: relative;
+}
+
+#detail_photo_wrap .five_point_one,
+#detail_photo_wrap .sxqr,
+#detail_photo_wrap .evo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+}
+
+/*media query*/
+@media screen and (max-width:1150px) {
+    .detail_text table {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    #product_top_wrap ul li a {
+        font-size: 12px;
+    }
+
+    #product_tab ul li p {
+        font-size: 12px;
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    /*상단 탭버튼*/
+    #product_top_wrap ul {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 0;
+        margin-bottom: 0px;
+    }
+
+    #product_top_wrap ul li {
+        width: 50%;
+        text-align: center;
+        box-sizing: border-box;
+    }
+
+    #product_top_wrap ul li:first-child {
+        border-right: 1px solid rgba(255, 255, 255, 0.8);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+    }
+
+    #product_top_wrap ul li:nth-child(3) {
+        border-right: 1px solid rgba(255, 255, 255, 0.8);
+    }
+
+    #product_top_wrap ul li a {
+        background: #e9881d;
+        font-weight: normal;
+        line-height: 40px;
+        display: block;
+        color: rgba(255, 255, 255, 0.8);
+    }
+
+    #product_top_wrap ul li:hover a {
+        color: #fff;
+    }
+
+    #product_top_wrap ul li.sl_selected a {
+        color: #fff;
+        font-weight: bold;
+    }
+
+
+    /*slide*/
+    .swiper-wrapper {
+        padding-bottom: 30px;
+    }
+
+    .swiper-slide {
+        flex-wrap: wrap;
+    }
+
+    .swiper-slide img {
+        width: 100%;
+        max-width: 770px;
+        height: auto;
+    }
+
+    .swiper-slide .slide_text {
+        width: 100%;
+        height: 60px;
+        margin: 3% 0;
+        font-size: 12px;
+    }
+
+    .swiper-button-next,
+    .swiper-button-prev {
+        display: none;
+    }
+
+    /*tab_menu*/
+    #product_bottom_wrap h2 {
+        margin-bottom: 20px;
+        margin-top: 50px;
+        font-size: 15px;
+    }
+
+    #product_tab ul {
+        flex-wrap: wrap;
+    }
+
+    /*#product_tab ul li {
+        width: 50%;
+        position: relative;
+        text-align: center;
+    }
+
+    #product_tab ul li:nth-child(2)::after {
+        border-right: none;
+    }*/
+
+    #product_tab ul li img {
+        width: 50%;
+    }
+
+    /*product detail*/
+    #detail_photo_wrap > ul {
+        flex-wrap: wrap;
+    }
+
+    #detail_photo_wrap ul .detail_photo {
+        width: 100%;
+    }
+
+    #detail_photo_wrap ul .detail_photo img {
+        width: 60%;
+        max-width: 541px;
+    }
+
+    #detail_photo_wrap ul .detail_text {
+        width: 100%;
+    }
+
+    .detail_text table tr {
+        height: 20px;
+    }
+
+    .detail_text table {
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (max-width:545px) {
+    .detail_text table {
+        font-size: 12px;
+    }
+
+}

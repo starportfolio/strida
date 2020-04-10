@@ -1,0 +1,28 @@
+@charset"utf-8";
+
+
+#news_wrap h2 {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+#news_wrap #news {
+    max-width: 1620px;
+    min-height: 500px;
+}
+
+
+
+/*media query*/
+@media screen and (max-width:768px) {
+
+    #news_wrap h2 {
+        font-size: 15px;
+    }
+
+    #news_wrap h2 {
+        margin: 20px 0;
+    }
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Catalogue</title>
+
+    <!--CSS -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/strida_common.css">
+    <!--해당 서브페이지 스타일 적용-->
+    <link rel="stylesheet" href="css/sub_501.css">
+    <link rel="stylesheet" href="css/jquery.flipster.min.css">
+    
+    <!--Web Fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    <!--Favicon-->
+    <link rel="apple-touch-icon-precomposed" href="img/main_img/strida_favicon.png">
+    <link rel="shortcut icon" href="img/main_img/strida_favicon.png">
+
+</head>
+
+<body>
+    <!--header-->
+    <? include "header.html" ?>
+    <!--//header-->
+    <div id="catalogue_wrap" class="center">
+        <div id="text">
+            <h2>
+                Catalogue
+            </h2>
+        </div>
+
+        <div id="coverflow">
+            <ul class="flip-items">
+                <li data-flip-title="2014">
+                    <img src="img/sub_5/sub_501_img/2014.png" alt="2014년 카달로그">
+                </li>
+                <li data-flip-title="2015">
+                    <img src="img/sub_5/sub_501_img/2015.png" alt="2015년 카달로그">
+                </li>
+                <li data-flip-title="2016">
+                    <img src="img/sub_5/sub_501_img/2016.png" alt="2016년 카달로그">
+                </li>
+                <li data-flip-title="2017">
+                    <img src="img/sub_5/sub_501_img/2017.png" alt="2017년 카달로그">
+                </li>
+                <li data-flip-title="2018">
+                    <img src="img/sub_5/sub_501_img/2018.png" alt="2018년 카달로그">
+                </li>
+                <li data-flip-title="2019">
+                    <img src="img/sub_5/sub_501_img/2019.png" alt="2019년 카달로그">
+                </li>
+                <li data-flip-title="2020">
+                    <img src="img/sub_5/sub_501_img/2020.png" alt="2020년 카달로그">
+                </li>
+            </ul>
+        </div>
+        <div class="mouse_icon">
+            <img src="img/sub_5/sub_501_img/touch_icon1.png" alt="좌우로 슬라이드 하세요" class="touch1">
+            <img src="img/sub_5/sub_501_img/touch_icon2.png" alt="좌우로 슬라이드 하세요" class="touch2">
+        </div>
+        <!-- //mouseicon -->
+    </div>
+    <!-- //wrap -->
+
+    <!-- footer -->
+    <? include "footer.html" ?>
+    <!-- //footer -->
+    
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/strida_common.js"></script>
+    <script src="js/jquery.flipster.min.js"></script>
+    
+    <script>
+        var coverflow = $("#coverflow").flipster();
+    </script>
+
+
+</body>
+
+</html>

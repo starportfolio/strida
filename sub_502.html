@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Manual</title>
+
+    <!--CSS -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/strida_common.css">
+    <!--해당 서브페이지 스타일 적용-->
+    <link rel="stylesheet" href="css/sub_502.css">
+    <link rel="stylesheet" href="css/jquery.flipster.min.css">
+    
+    <!--Web_Font-->
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+    <!--Favicon-->
+    <link rel="apple-touch-icon-precomposed" href="img/main_img/strida_favicon.png">
+    <link rel="shortcut icon" href="img/main_img/strida_favicon.png">
+    
+</head>
+
+<body>
+    <!--header-->
+    <? include "header.html" ?>
+    <!--//header-->
+    <div id="menual_wrap" class="center">
+        <div id="text">
+            <h2>
+                Manual
+            </h2>
+        </div>
+
+        <div id="coverflow">
+            <ul class="flip-items">
+                <li data-flip-title="휠 교체 메뉴얼">
+                    <img src="img/sub_5/sub_502_img/menual1.png" alt="휠교체 메뉴얼">
+                </li>
+                <li data-flip-title="브레이크 정비 메뉴얼">
+                    <img src="img/sub_5/sub_502_img/menual2.png" alt="브레이크 정비 메뉴얼">
+                </li>
+                <li data-flip-title="한글메뉴얼">
+                    <img src="img/sub_5/sub_502_img/menual3.png" alt="사용자 한글 메뉴얼">
+                </li>
+                <li data-flip-title="영문메뉴얼">
+                    <img src="img/sub_5/sub_502_img/menual4.png" alt="사용자 영문 메뉴얼">
+                </li>
+                <li data-flip-title="C1메뉴얼">
+                    <img src="img/sub_5/sub_502_img/menual5.png" alt="C1모델 메뉴얼">
+                </li>
+                <li data-flip-title="QR안장 메뉴얼">
+                    <img src="img/sub_5/sub_502_img/menual6.png" alt="QR안장 메뉴얼">
+                </li>
+                <li data-flip-title="크랭크 정비 메뉴얼">
+                    <img src="img/sub_5/sub_502_img/menual7.png" alt="크랭크 정 메뉴얼">
+                </li>
+            </ul>
+        </div>
+        <div class="mouse_icon">
+            <img src="img/sub_5/sub_501_img/touch_icon1.png" alt="좌우로 슬라이드 하세요" class="touch1">
+            <img src="img/sub_5/sub_501_img/touch_icon2.png" alt="좌우로 슬라이드 하세요" class="touch2">
+        </div>
+        <!-- //mouseicon -->
+    </div>
+    <!-- //wrap-->
+
+    
+    <!-- footer -->
+    <? include "footer.html" ?>
+    <!-- //footer -->
+    
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="js/strida_common.js"></script>
+    <script src="js/jquery.flipster.min.js"></script>
+    
+    <script>
+        var coverflow = $("#coverflow").flipster();
+    </script>
+
+</body>
+
+</html>
